@@ -3,22 +3,34 @@
       background-color: teal;
     }
   
-    50% {
+    25% {
       background-color: orange;
+      right: 100px;
+    }
+    50% {
+      background-color: rgb(21, 255, 0);
+      top: 100px;
+    }
+    75% {
+      background-color: rgb(174, 0, 255);
+      left: 100px;
     }
   
     100% {
       background-color: deepskyblue;
+      bottom: 100px;
     }
 }
 .box{
+    margin: 50%;
     width: 100px;
     height: 100px;
     background-color: teal;
     animation-name: changeBgColor;
-    animation-duration: 3000ms;
+    animation-duration: 8000ms;
     animation-iteration-count: infinite;
     border-radius: 10%;
+    position: relative;
 }
 .box :hover{
     animation-name: changeBgColor;

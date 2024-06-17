@@ -1,0 +1,25 @@
+@keyframes changeBgColor {
+    0% {
+      background-color: teal;
+    }
+  
+    50% {
+      background-color: orange;
+    }
+  
+    100% {
+      background-color: deepskyblue;
+    }
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+}
+.box :hover{
+    animation-name: changeBgColor;
+}
